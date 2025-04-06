@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>Pathfinding Visualiser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Pathfinding Visualiser</h1>
+        <select id="brushType">
+            <option value="Wall">Wall</option>
+            <option value="Light Weight">Light Weight</option>
+            <option value="Medium Weight">Medium Weight</option>
+            <option value="Heavy Weight">Heavy Weight</option>
+        </select>
+        <select id="searchType">
+            <option value="Breadth First Search">Breadth First Search</option>
+            <option value="Depth First Search">Depth First Search</option>
+            <option value="Dijkstra's Algorithm">Dijkstra's Algorithm</option>
+            <option value="A* Search Algorithm">A* Search Algorithm</option>
+        </select>
+        <button onclick="grid.findPath()">Find Path</button>
+    </div>
+    
+    <div id="grid">
+        <svg viewBox="0 0 300 300"></svg>
+    </div>
+    <script src="script.js"></script>
+</body>
